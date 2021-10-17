@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>showDataServlet</servlet-name>
+        <servlet-class>com.company.showDataservlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showDataServlet</servlet-name>
+        <url-pattern>/showData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>marketServlet</servlet-name>
+        <servlet-class>com.sevlet.MarketServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>marketServlet</servlet-name>
+        <url-pattern>/market</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addCartServlet</servlet-name>
+        <servlet-class>com.sevlet.addCartServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addCartServlet</servlet-name>
+        <url-pattern>/addCart</url-pattern>
+    </servlet-mapping>
+</web-app>
